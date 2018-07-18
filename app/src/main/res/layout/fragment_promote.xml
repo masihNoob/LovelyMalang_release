@@ -1,0 +1,266 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".VenueActivity$PlaceholderFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aktifkan Promo"
+                android:visibility="gone" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Promo Title"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txttitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Promo Name"
+                android:maxLines="1"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/txtacco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Promo Accomodation"
+                android:visibility="gone"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spnacco"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </Spinner>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Promo Description"
+                android:textStyle="bold" />
+
+            <jp.wasabeef.richeditor.RichEditor
+                android:id="@+id/txtdescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Discount With Amount"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtamount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Discount with amount"
+                android:maxLines="1"
+                android:inputType="number"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Discount With Percentage"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtpersen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Promo with %"
+                android:maxLines="1"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Promo Start"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtstart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Start"
+                android:maxLines="1"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Promo End"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="End"
+                android:maxLines="1"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Voucher Number"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtnumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Voucher limit"
+                android:maxLines="1"
+                android:inputType="number"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PIC Name"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtpicname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textPersonName"
+                android:maxLines="1"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PIC Phone"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtpicphone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PIC Email"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtpicemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PIC FAX"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtpicfax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Promotion Banner" />
+
+            <ImageView
+                android:id="@+id/imgbanner"
+                android:layout_width="match_parent"
+                android:adjustViewBounds="true"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content" />
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btnbg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/sb__button_text_color"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:text="CHOOSE BANNER"
+                android:textColor="@color/cardview_light_background" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Featured Image" />
+
+            <ImageView
+                android:id="@+id/imgvenue"
+                android:layout_width="match_parent"
+                android:adjustViewBounds="true"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btnpic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/sb__button_text_color"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:text="PICK PICTURE"
+                android:textColor="@color/cardview_light_background" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="30dp" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btncek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:text="SAVE PROMO"
+                android:textColor="@color/cardview_light_background" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="80dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

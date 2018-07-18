@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    android:orientation="vertical"
+    tools:context="com.lunartech.lovelymalang.Main2Activity$PlaceholderFragment">
+
+    <ImageView
+        android:id="@+id/imginslide"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/app_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/txtinslide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/cardview_light_background"
+        android:textSize="22sp"
+        android:background="#BB000000"
+        android:layout_above="@+id/txttgl"
+        android:paddingLeft="10dp"
+        android:paddingStart="10dp"
+        android:paddingRight="10dp"
+        android:paddingEnd="10dp"
+        android:layout_alignLeft="@+id/imginslide"
+        android:layout_alignStart="@+id/imginslide"
+        />
+    <TextView
+        android:id="@+id/txttgl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/cardview_light_background"
+        android:textSize="18sp"
+        android:background="#BB000000"
+        android:layout_alignBottom="@+id/imginslide"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingStart="10dp"
+        android:paddingRight="10dp"
+        android:paddingEnd="10dp"
+        android:maxLines="2"
+        android:lines="2"
+        android:ellipsize="end"
+        android:layout_alignLeft="@+id/imginslide"
+        android:layout_alignStart="@+id/imginslide"
+        />
+</RelativeLayout>

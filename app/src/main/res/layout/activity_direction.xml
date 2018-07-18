@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- Map content -->
+    <fragment
+        android:id="@+id/map"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.google.android.gms.maps.SupportMapFragment" />
+    <!-- End of map content -->
+
+    <!-- Play button -->
+    <net.i2p.android.ext.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/fabStop"
+        app:fab_icon="@drawable/ic_play_circle_filled_white_36dp"
+        app:fab_colorNormal="@color/accent_color"
+        app:fab_colorPressed="@color/light_primary_color"/>
+
+    <!-- Stop button -->
+    <net.i2p.android.ext.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/standard_margin"
+        app:fab_icon="@drawable/ic_stop_white_36dp"
+        app:fab_colorNormal="@color/red"
+        app:fab_colorPressed="@color/light_primary_color"/>
+
+    <!-- Prev button -->
+    <net.i2p.android.ext.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabPrev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/standard_margin"
+        app:fab_icon="@drawable/ic_skip_previous_white_36dp"
+        app:fab_colorNormal="@color/fab_orange_dark"
+        app:fab_colorPressed="@color/light_primary_color"/>
+
+    <!-- Stop button -->
+    <net.i2p.android.ext.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/fabPrev"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/standard_margin"
+        app:fab_icon="@drawable/ic_skip_next_white_36dp"
+        app:fab_colorNormal="@color/fab_orange_dark"
+        app:fab_colorPressed="@color/light_primary_color"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/map"
+        android:orientation="horizontal"
+        android:background="#ddffffff"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgIcon"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
+
+        <TextView
+            android:id="@+id/txtAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#000000"
+            android:layout_margin="@dimen/standard_margin"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imglogo"
+        android:clickable="true"
+        android:layout_width="170dp"
+        android:layout_height="35dp"
+        android:scaleType="centerInside"
+        android:layout_marginBottom="2dp"
+        android:src="@drawable/lintasgps"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>

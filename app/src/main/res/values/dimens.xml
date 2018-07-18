@@ -1,0 +1,24 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="standard_margin">24dp</dimen>
+
+    <dimen name="range">140dp</dimen>
+    <dimen name="iconsize">50dp</dimen>
+    <dimen name="iconsize2">30dp</dimen>
+
+    <!-- text sizes -->
+
+    <!-- other sizes -->
+
+    <!-- distance label sizes -->
+
+    <!-- Card sizes -->
+
+</resources>

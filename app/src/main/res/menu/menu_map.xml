@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.lunartech.lovelymalang.MainActivity">
+    <item
+        android:id="@+id/tourism_map"
+        android:icon="@drawable/ic_map"
+        android:orderInCategory="10"
+        android:title="Peta Pariwisata"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/map_map"
+        android:orderInCategory="100"
+        android:title="Map View"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/map_satellite"
+        android:orderInCategory="100"
+        android:title="Satellite View"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/map_hybrid"
+        android:orderInCategory="100"
+        android:title="Hybrid View"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/map_terrain"
+        android:orderInCategory="100"
+        android:title="Terrain View"
+        app:showAsAction="never" />
+</menu>

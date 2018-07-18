@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Malang City Tourism</string>
+    <string name="facebook_app_id">174353686361956</string>
+    <string name="fb_login_protocol_scheme">fb174353686361956</string>
+
+    <!-- Strings related to login -->
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_password">Required</string>
+    <string name="error_field_required">Required</string>
+    <string name="error_field_alpha">Alphanumeric only</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="weather">Cuaca</string>
+</resources>

@@ -1,0 +1,289 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".VenueActivity$PlaceholderFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Category" />
+
+            <Spinner
+                android:id="@+id/spncat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textStyle="bold"
+                android:text="Destination Name" />
+
+            <EditText
+                android:id="@+id/txtnama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:hint="Destination Name"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Address" />
+
+            <EditText
+                android:id="@+id/txtaddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Address"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Description" />
+
+            <jp.wasabeef.richeditor.RichEditor
+                android:id="@+id/txtdescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:hint="Description"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:text="Minimum Accomodation (Rp)" />
+
+            <EditText
+                android:id="@+id/txtminacco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:inputType="number"
+                android:visibility="gone"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:text="Maximum Accomodation (Rp)" />
+
+            <EditText
+                android:id="@+id/txtmaxacco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:visibility="gone"
+                android:inputType="number"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Facilities" />
+
+            <com.lunartech.lovelymalang.MultiSpinner
+                android:id="@+id/spnfac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="PIC Name" />
+
+            <EditText
+                android:id="@+id/txtpicname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textPersonName"
+                android:maxLines="1"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="PIC Phone" />
+
+            <EditText
+                android:id="@+id/txtpicphone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="PIC Email" />
+
+            <EditText
+                android:id="@+id/txtpicemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="PIC Website" />
+
+            <EditText
+                android:id="@+id/txtpicweb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textWebEditText"
+                android:maxLines="1"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="PIC FAX" />
+
+            <EditText
+                android:id="@+id/txtpicfax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:text="" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Map Location" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/txtlatitude"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Latitude"
+                    android:inputType="numberDecimal"
+                    android:text="" />
+
+                <EditText
+                    android:id="@+id/txtlongitude"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Longitude"
+                    android:inputType="numberDecimal"
+                    android:text="" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btnpeta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Open Map" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Destination Featured Image" />
+
+            <ImageView
+                android:id="@+id/imgvenue"
+                android:layout_width="match_parent"
+                android:adjustViewBounds="true"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btnpic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/sb__button_text_color"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:text="PICK PICTURE"
+                android:textColor="@color/cardview_light_background" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="30dp" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btnsave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:text="SAVE DESTINATION"
+                android:textColor="@color/cardview_light_background" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+
+            <com.lunartech.lovelymalang.HorizontalListView
+                android:id="@+id/sslistview"
+                android:layout_width="fill_parent"
+                android:layout_height="100dip"
+                android:layout_marginBottom="10dp"
+                android:background="#ddd"
+                />
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btnaddgallery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:text="ADD GALLERY"
+                android:textColor="@color/cardview_light_background" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="80dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

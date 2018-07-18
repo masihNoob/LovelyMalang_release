@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#26462a</color>
+    <color name="colorAccent">#000000</color>
+
+    <color name="black_overlay">#66000000</color>
+
+    <color name="dark_primary_color">#1976D2</color>
+    <color name="light_primary_color">#BBDEFB</color>
+    <color name="accent_color">#8BC34A</color>
+
+    <color name="fab_orange_dark">#f97910</color>
+    <color name="white">#FFFFFF</color>
+    <color name="blue">#673AB7</color>
+    <color name="red">#e10514</color>
+    <color name="black">#000000</color>
+    <color name="greentea">#6c6c09</color>
+
+    <color name="col1">#014b2b</color>
+    <color name="col2">#e64747</color>
+    <color name="col3">#0303dc</color>
+    <color name="col4">#039685</color>
+    <color name="col5">#fb9c0271</color>
+    <color name="col6">#740148</color>
+    <color name="col7">#c73703</color>
+    <color name="col8">#717102</color>
+    <color name="col9">#f7365273</color>
+    <color name="col10">#865b49</color>
+
+</resources>

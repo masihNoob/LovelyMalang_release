@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="0dp"
+    android:orientation="vertical"
+    android:background="@drawable/gedek"
+    tools:context="com.lunartech.lovelymalang.ActivityTourism">
+
+    <ImageView
+        android:id="@+id/mainbg"
+        android:src="@drawable/gedek"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/upperBar"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/col5"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/app_name"
+                android:padding="14dp"
+                android:layout_gravity="right"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:scaleType="fitEnd"
+                android:src="@drawable/beautifulmalang" />
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/upperBar"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        >
+        <ImageButton
+            android:id="@+id/btnMall"
+            android:layout_width="@dimen/iconsize"
+            android:layout_height="@dimen/iconsize"
+            android:src="@drawable/ic_mall"
+            android:scaleType="centerInside"
+            android:tint="@color/col3"
+            android:background="@null"
+            android:onClick="onClick"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mall"
+            android:gravity="center"
+            android:textColor="@color/col3"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_below="@+id/upperBar"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        >
+        <ImageButton
+            android:id="@+id/btnPlaza"
+            android:layout_width="@dimen/iconsize"
+            android:layout_height="@dimen/iconsize"
+            android:src="@drawable/ic_plaza"
+            android:scaleType="centerInside"
+            android:tint="@color/col3"
+            android:background="@null"
+            android:onClick="onClick"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plaza"
+            android:gravity="center"
+            android:textColor="@color/col3"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_below="@+id/upperBar"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        >
+        <ImageButton
+            android:id="@+id/btnBazaar"
+            android:layout_width="@dimen/iconsize"
+            android:layout_height="@dimen/iconsize"
+            android:src="@drawable/ic_bazar"
+            android:scaleType="centerInside"
+            android:background="@null"
+            android:tint="@color/col3"
+            android:onClick="onClick"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bazaar"
+            android:gravity="center"
+            android:textColor="@color/col3"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

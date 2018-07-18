@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lunartech.lovelymalang">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/topeng2"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <!--         android:name="android.support.multidex.MultiDexApplication" -->
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCDTI9opZO3M11LJfjGOzs4tBd63RdHASD" />
+
+        <meta-data android:name="com.crashlytics.ApiKey" android:value="98f4194c2d6ef082deeac842ce314d65ed1b8111"/>
+
+        <activity
+            android:name=".ActivityBrowse"
+            android:screenOrientation="portrait"
+            android:label="Get Location" />
+        <activity
+            android:name=".ActivityMember"
+            android:screenOrientation="portrait"
+            android:label="Get Promo" />
+        <activity
+            android:name=".ActivityAbout"
+            android:screenOrientation="portrait"
+            android:label="About Raja Ampat" />
+        <activity
+            android:name=".ActivityPromo"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.ActivityList"
+            android:label="Promo" />
+        <activity
+            android:name=".ActivityRegister"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".ActivityMap"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.ActivityList"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".ActivityTourism"
+            android:screenOrientation="portrait"
+            android:label="Tourism" />
+        <activity
+            android:name=".ActivityAcco"
+            android:theme="@style/AppTheme.ActivityList"
+            android:screenOrientation="portrait"
+            android:label="Accomodation" />
+        <activity
+            android:name=".ActivityList"
+            android:theme="@style/AppTheme.ActivityList"
+            android:screenOrientation="portrait"
+            android:label="Tourism" />
+        <activity
+            android:name=".ActivityNews"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.ActivityList"
+            android:label="News" />
+        <activity
+            android:name=".ActivityNewsContent"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.ActivityList"
+            android:label="News" />
+        <activity
+            android:name=".ActivityEvent"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.ActivityList"
+            android:label="Event" />
+        <activity
+            android:name=".ActivitySubmit"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"
+            android:label="Submit Moments" />
+
+        <activity
+            android:name=".LoginActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".DaftarActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            android:label="Pendaftaran Baru" />
+        <activity
+            android:name=".LupaActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            android:label="Lupa PIN" />
+        <activity
+            android:name=".VenueActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            android:label="Promotor" />
+        <activity
+            android:name=".AdminActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            android:label="Promotor" />
+        <activity
+            android:name=".ActivityEditDest"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            android:label="Setup Data" />
+        <activity
+            android:name=".ActivityPromoBackground"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.ActivityList"
+            android:windowSoftInputMode="stateHidden"
+            android:label="Setup Data" />
+        <activity
+            android:name=".ActivityShowContent"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.ActivityList"
+            android:label="Setup Data" />
+        <activity
+            android:name=".ActivityShowPromo"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.ActivityList"
+            android:label="Promo" />
+        <activity
+            android:name=".SplashscreenActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.ActivityList"
+             />
+        <activity
+            android:name=".Main2Activity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="98f4194c2d6ef082deeac842ce314d65ed1b8111" />
+
+        <service
+            android:name=".MyInstanceIDListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+
+    </application>
+
+</manifest>

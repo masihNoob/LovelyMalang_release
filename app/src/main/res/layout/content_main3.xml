@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_overlay"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Main2Activity"
+    tools:showIn="@layout/app_bar_main2">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/customtoolbar"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@null"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <ImageButton
+        android:id="@+id/btnPromo"
+        android:layout_height="120dp"
+        android:layout_above="@id/customtoolbar"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="3dp"
+        android:layout_marginEnd="3dp"
+        android:background="@null"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitEnd"
+        android:src="@drawable/specialoffer2"
+        android:layout_width="100dp" />
+
+    <RelativeLayout
+        android:id="@+id/customtoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/homebg">
+
+        <LinearLayout
+            android:id="@+id/lyrScrolling"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"            >
+            <TextView
+                android:id="@+id/txtScrolling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/greentea"
+                android:paddingLeft="85dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:maxLines="1"
+                android:lines="1"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:text=""
+                android:textColor="@color/colorPrimary"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:scrollHorizontally="true"
+                android:freezesText="true"
+                android:gravity="left"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btnCenter"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_below="@+id/lyrWeather"
+            android:layout_centerInParent="true"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:background="@null"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitCenter"
+            android:src="@drawable/topeng" />
+
+        <LinearLayout
+            android:id="@+id/lyrWeather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lyrScrolling"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="0dp"
+            android:background="@color/transparent"
+            android:orientation="vertical"
+            android:padding="0dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/weather"
+                android:textSize="17sp"
+                android:layout_marginLeft="11dp"
+                android:layout_marginRight="10dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#FF6B8B05" />
+
+            <TextView
+                android:id="@+id/txtWeather"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="-10dp"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#6b8b05"
+                android:textSize="42sp"
+                tools:ignore="RtlHardcoded" />
+
+            <ImageView
+                android:id="@+id/imgWeather"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:visibility="gone"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerInside" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/strmalangmenyapa"
+            android:scaleType="centerInside"
+            />
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/btnEvent"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/customtoolbar"
+        android:layout_marginLeft="3dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="-7dp"
+        android:background="@null"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitCenter"
+        android:src="@drawable/calendar" />
+</RelativeLayout>

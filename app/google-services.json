@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1084953303612",
+    "firebase_url": "https://lovelymalang-20161125.firebaseio.com",
+    "project_id": "lovelymalang-20161125",
+    "storage_bucket": "lovelymalang-20161125.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1084953303612:android:70a55caf42ee329e",
+        "android_client_info": {
+          "package_name": "com.lunartech.lovelymalang"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1084953303612-iuh27tpplod7cvmd5hjnqf5jc6b7f9ej.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "1084953303612-ddchd9m8182cghn5e591th32ravurkhu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lunartech.lovelymalang",
+            "certificate_hash": "cbf92770d540e1fc4c3e70b947acc900ae296597"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlq8HzsaKibW98x8M-Q7XMxxA0I8ewLdg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1084953303612-iuh27tpplod7cvmd5hjnqf5jc6b7f9ej.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

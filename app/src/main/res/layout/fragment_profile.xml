@@ -1,0 +1,241 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gradientbig2"
+    android:orientation="vertical"
+>
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/upperBar"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/col8"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/app_name"
+                android:padding="14dp"
+                android:layout_gravity="right"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:scaleType="fitEnd"
+                android:src="@drawable/beautifulmalang" />
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_below="@+id/upperBar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/imgvenue"
+                android:background="#777777"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Category" />
+            <TextView
+                android:id="@+id/txtcatname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/lbladdress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtaddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btnpeta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:text="Open in Map" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textStyle="bold" />
+
+            <org.sufficientlysecure.htmltextview.HtmlTextView
+                android:id="@+id/txtdescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:text="" />
+
+            <com.lunartech.lovelymalang.HorizontalListView
+                android:id="@+id/sslistview"
+                android:layout_width="fill_parent"
+                android:layout_height="100dip"
+                android:layout_marginBottom="10dp"
+                android:background="@null"
+                />
+
+            <TextView
+                android:id="@+id/lblfacs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Facilities"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtfacs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/lblnama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PIC Name"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtnama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/lblemail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtemail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/lblcall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtcall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/lblfax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FAX"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtfax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/lblweb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Website"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtweb"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:text="" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="30dp" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btnsave"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:text="GET PROMO"
+                android:textColor="@color/cardview_light_background" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btnuse"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="USE THIS PROMO"
+                android:textColor="@color/cardview_light_background" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="80dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <net.i2p.android.ext.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        app:fab_icon="@drawable/ic_share_black_36dp"
+        app:fab_colorNormal="#9999ff"
+        app:fab_colorPressed="#ddddff"
+        />
+</RelativeLayout>
