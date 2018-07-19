@@ -3,10 +3,11 @@ buildscript {
         jcenter()
         google()
         maven { url 'https://maven.fabric.io/public' }
+        maven { url "https://jitpack.io" }
     }
 
     dependencies {
-        classpath 'io.fabric.tools:gradle:1.21.6'
+        classpath 'io.fabric.tools:gradle:1.22.1'
     }
 }
 apply plugin: 'com.android.application'
@@ -29,15 +30,24 @@ android {
         multiDexEnabled true
     }
     useLibrary 'org.apache.http.legacy'
+
+    signingConfigs {
+        release {
+            storeFile file('../LovelyMalang.jks')
+            storePassword 'malamku123'
+            keyAlias 'lovelymalang'
+            keyPassword 'malamku123'
+        }
+    }
     buildTypes {
+        debug {
+            signingConfig signingConfigs.release
+        }
         release {
             minifyEnabled true
             shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            signingConfig signingConfigs.config
-        }
-        debug {
-            signingConfig signingConfigs.config
+            signingConfig signingConfigs.release
         }
     }
     productFlavors {
@@ -63,15 +73,18 @@ dependencies {
     implementation('com.afollestad.material-dialogs:core:0.9.6.0@aar') {
         transitive = true
     }
+    implementation 'com.afollestad.material-dialogs:commons:0.9.6.0'
     implementation files('../libs/loopj.jar')
     implementation files('../libs/YouTubeAndroidPlayerApi.jar')
     implementation 'net.i2p.android.ext:floatingactionbutton:1.10.0'
     implementation 'com.android.support:appcompat-v7:27.0.0'
-    implementation 'com.android.support:recyclerview-v7:27.0.0'
-    implementation 'com.android.support:support-v4:27.0.0'
-    implementation 'com.android.support:cardview-v7:27.0.0'
-    implementation 'com.android.support:design:27.0.0'
-    implementation 'com.android.support:customtabs:27.0.0'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+    implementation 'com.android.support:support-annotations:27.1.1'
+    implementation 'com.android.support:customtabs:27.1.1'
+    implementation "com.android.support:support-core-utils:27.1.1"
 
     implementation 'com.makeramen:roundedimageview:2.2.1'
     implementation 'com.google.android.gms:play-services-location:10.2.1'
@@ -87,7 +100,7 @@ dependencies {
     implementation('com.twitter.sdk.android:twitter:1.1.0@aar') {
         transitive = true
     }
-    implementation 'jp.wasabeef:richeditor-android:1.2.1'
+    implementation 'jp.wasabeef:richeditor-android:1.2.2'
 
     implementation 'com.github.sundeepk:compact-calendar-view:2.0.1'
 
@@ -98,6 +111,8 @@ dependencies {
 
     implementation "me.leolin:ShortcutBadger:1.1.13@aar"
     implementation 'com.github.mancj:MaterialSearchBar:0.3.5'
+
+    implementation 'org.apache.httpcomponents:httpcore:4.4.10'
 
     apply plugin: 'com.google.gms.google-services'
     implementation project(':CFA')
